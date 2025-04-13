@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SS Telecom - Online Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      perspective: 1000px;
+    }
+    header {
+      background: linear-gradient(to right, #0d47a1, #1976d2);
+      color: white;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      transform: rotateX(5deg);
+    }
+    nav {
+      background: #1565c0;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: transform 0.3s;
+    }
+    nav a:hover {
+      transform: scale(1.1);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #0d47a1;
+      margin-bottom: 20px;
+      text-align: center;
+      transform: rotateX(2deg);
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+    .product {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      text-align: center;
+      transition: transform 0.4s, box-shadow 0.4s;
+      transform-style: preserve-3d;
+    }
+    .product:hover {
+      transform: rotateY(10deg) scale(1.03);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    }
+    .product h3 {
+      color: #1565c0;
+      margin-bottom: 10px;
+    }
+    .buy-btn {
+      background: #00c853;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+      display: inline-block;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .buy-btn:hover {
+      background: #009624;
+      transform: scale(1.1);
+    }
+    footer {
+      background: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+    }
+    footer a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="owner_photo.jpg" alt="Owner Photo" style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%; margin-bottom: 20px; border: 4px solid white; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+
+  <h1>SS Telecom</h1>
+  <p>Your Local Mobile & Stationery Product Provider</p>
+</header>
+
+<nav>
+  <a href="#products">Products</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container" id="products">
+  <h2>Our Products</h2>
+  <div class="product-grid">
+    <div class="product"><h3>Mobile Charger</h3><p>USB, Type-C, Type-B</p><a class="buy-btn" href="https://wa.me/917074300509?text=I want to buy a mobile charger">Buy Now</a></div>
+    <div class="product"><h3>Earphones</h3><p>Bluetooth and Wired</p><a class="buy-btn" href="https://wa.me/917074300509?text=I want to buy earphones">Buy Now</a></div>
+    <div class="product"><h3>Gaming Finger Sleeves</h3><p>Smart gaming accessories</p><a class="buy-btn" href="https://wa.me/917074300509?text=I want to buy gaming finger sleeves">Buy Now</a></div>
+    <div class="product"><h3>Memory Card</h3><p>All types of storage</p><a class="buy-btn" href="https://wa.me/917074300509?text=I want to buy a memory card">Buy Now</a></div>
+    <div class="product"><h3>Card Reader</h3><p>Smart USB card readers</p><a class="buy-btn" href="https://wa.me/917074300509?text=I want to buy a card reader">Buy Now</a></div>
+    <div class="product"><h3>Mobile Covers</h3><p>For all models</p><a class="buy-btn" href="https://wa.me/917074300509?text=I want to buy a mobile cover">Buy Now</a></div>
+    <div class="product"><h3>Pen</h3><p>Blue and Black Ink</p><a class="buy-btn" href="https://wa.me/917074300509?text=I want to buy a pen">Buy Now</a></div>
+    <div class="product"><h3>Notebook</h3><p>Small, Medium, Large</p><a class="buy-btn" href="https://wa.me/917074300509?text=I want to buy a notebook">Buy Now</a></div>
+    <div class="product"><h3>Scale</h3><p>15/30 cm Ruler</p><a class="buy-btn" href="https://wa.me/917074300509?text=I want to buy a ruler">Buy Now</a></div>
+    <div class="product"><h3>Pencil, Eraser, Sharpener</h3><p>Perfect for school</p><a class="buy-btn" href="https://wa.me/917074300509?text=I want to buy stationery items">Buy Now</a></div>
+    <div class="product"><h3>Data Cable</h3><p>Type-C / USB</p><a class="buy-btn" href="https://wa.me/917074300509?text=I want to buy a data cable">Buy Now</a></div>
+  </div>
+</div>
+
+<div class="container" id="contact">
+  <h2>Contact</h2>
+  <p>Address: Patharchapuri, Suri, Birbhum</p>
+  <p>WhatsApp: <a href="https://wa.me/917074300509">7074300509</a></p>
+</div>
+
+<footer>
+  &copy; 2025 SS Telecom | All rights reserved
+  <br>
+  <a href="https://www.facebook.com/share/197A9uTneS/">Facebook</a> | <a href="https://www.instagram.com/sehejul_khan">Instagram</a>
+</footer>
+
+</body>
+</html>
